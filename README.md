@@ -4,7 +4,7 @@
 3D adventure game made using Godot 3.1.1 (GLES2; Bullet).  
 Graphics programs used:  Blender 2.79b, GIMP, Krita, Inkscape, LMMS, and sfxr.
 
-Game is still in development.
+Only two game levels included. One character, one enemy type.
 
 All graphical and audio assets are CC0.  
 The cobblestone texture for platforms is from opengameart.org
