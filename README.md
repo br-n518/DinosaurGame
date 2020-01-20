@@ -1,6 +1,6 @@
 
 # Dinosaur Game
-![APK](bin/DinosaurGame.apk)
+![APK](https://github.com/br-n518/DinosaurGame/raw/master/bin/DinosaurGame.apk)
 
 3D adventure game made using Godot 3.1.1 (GLES2; Bullet).  
 Graphics programs used:  Blender 2.79b, GIMP, Krita, Inkscape, LMMS, and sfxr.
@@ -25,4 +25,4 @@ The cobblestone texture for platforms is from opengameart.org
 
 - Designed for Android GLES2.
 - No input controls are available for gamepad or PC. Only touchscreen. (Plus mouse, though tedious/impossible)
-
+- No updates planned.
