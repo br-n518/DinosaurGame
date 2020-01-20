@@ -1,0 +1,118 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://environment/scenes/levels/Level_Base.tscn" type="PackedScene" id=1]
+[ext_resource path="res://environment/scripts/levels/Level_0.gd" type="Script" id=2]
+[ext_resource path="res://environment/assets/tree.dae" type="PackedScene" id=3]
+[ext_resource path="res://environment/scenes/foliage/grass_plant.tscn" type="PackedScene" id=4]
+[ext_resource path="res://environment/assets/tree2.dae" type="PackedScene" id=5]
+[ext_resource path="res://characters/scenes/Flybot.tscn" type="PackedScene" id=6]
+
+
+
+
+
+[node name="Level" index="0" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Walls" parent="." index="2"]
+data = {
+"cells": PoolIntArray( 5, 0, 1441794, 65523, 0, 1048579, 65527, 0, 3, 65531, 0, 537919490, 5, 1, 1441794, 65522, 1, 1048578, 65528, 1, 4, 65529, 1, 2, 65530, 1, 2, 65531, 1, 1048580, 5, 2, 1441794, 65522, 2, 1048578, 5, 3, 1441794, 65522, 3, 1048578, 5, 4, 1441794, 65528, 4, 1441796, 65529, 4, -1609957374, 65530, 4, 655362, 65531, 4, 655364, 5, 5, 1612054530, 65522, 5, 1048578, 65528, 5, 538312706, 65531, 5, 1048578, 5, 6, 1441794, 65523, 6, 655363, 65527, 6, 1441795, 65531, 6, 1048578, 4, 7, 1441795, 65524, 7, 655362, 65525, 7, 655362, 65526, 7, 655362, 65532, 7, 655363, 0, 8, 655362, 1, 8, 655362, 2, 8, 655362, 3, 8, 655362, 65533, 8, 655362, 65534, 8, 655362, 65535, 8, 655362, 0, 65534, 2, 1, 65534, 2, 2, 65534, 2, 3, 65534, 2, 65533, 65534, 2, 65534, 65534, 2, 65535, 65534, 2, 4, 65535, 3, 65524, 65535, 2, 65525, 65535, 2, 65526, 65535, 2, 65532, 65535, 1048579 )
+}
+
+[node name="Floors" parent="Walls" index="0"]
+data = {
+"cells": PoolIntArray( 0, 0, 1, 1, 0, 1, 2, 0, 1, 3, 0, -1073741823, 4, 0, 1, 65523, 0, 1, 65524, 0, -1073741823, 65525, 0, 1, 65526, 0, 1, 65527, 0, 1, 65532, 0, 1, 65533, 0, 1, 65534, 0, 1, 65535, 0, 1, 0, 1, 1, 1, 1, 1, 2, 1, 1, 3, 1, -1610612735, 4, 1, 1, 65523, 1, 1, 65524, 1, 1, 65525, 1, 1, 65526, 1, 1, 65527, 1, -1610612735, 65528, 1, 1, 65531, 1, 1, 65532, 1, 1, 65533, 1, 1, 65534, 1, 1, 65535, 1, 1610612737, 0, 2, 1, 1, 2, 1, 2, 2, 1, 3, 2, 1, 4, 2, 1, 65523, 2, 1, 65524, 2, 536870913, 65525, 2, 536870913, 65526, 2, 536870913, 65527, 2, 1, 65528, 2, 1, 65529, 2, 1, 65530, 2, 1, 65531, 2, 1, 65532, 2, 1, 65533, 2, 1, 65534, 2, 1, 65535, 2, 1, 0, 3, 1, 1, 3, 1, 2, 3, 1, 3, 3, 1, 4, 3, 1, 65523, 3, 1, 65524, 3, 1, 65525, 3, 1, 65526, 3, 1, 65527, 3, 1, 65528, 3, 1, 65529, 3, 1, 65530, 3, 1, 65531, 3, 1, 65532, 3, 1, 65533, 3, 1, 65534, 3, 1, 65535, 3, 1, 0, 4, 1, 1, 4, 1, 2, 4, 1, 3, 4, 1, 4, 4, 1, 65523, 4, 1, 65524, 4, 1, 65525, 4, 1, 65526, 4, 1, 65527, 4, 1, 65528, 4, 1, 65531, 4, 1, 65532, 4, 1, 65533, 4, 1, 65534, 4, 1, 65535, 4, 1, 0, 5, 1, 1, 5, 1, 2, 5, 536870913, 3, 5, 536870913, 4, 5, 536870913, 65523, 5, 1, 65524, 5, 1, 65525, 5, 1, 65526, 5, 1, 65527, 5, 1, 65532, 5, 1, 65533, 5, 1, 65534, 5, 1, 65535, 5, 1, 0, 6, 1, 1, 6, 1, 2, 6, 1, 3, 6, 1, 4, 6, 1, 65523, 6, 1, 65524, 6, 1, 65525, 6, 1, 65526, 6, 1, 65527, 6, 1, 65532, 6, 1, 65533, 6, 1, 65534, 6, 1, 65535, 6, 1, 0, 7, 536870913, 1, 7, 536870913, 2, 7, 1, 3, 7, 536870913, 4, 7, 536870913, 65532, 7, 1, 65533, 7, 536870913, 65534, 7, 536870913, 65535, 7, 536870913, 0, 65534, 1, 1, 65534, 1, 2, 65534, 1, 3, 65534, 536870913, 4, 65534, 1, 65532, 65534, 536870913, 65533, 65534, 1, 65534, 65534, 1, 65535, 65534, 1, 0, 65535, 1, 1, 65535, 1, 2, 65535, 1, 3, 65535, 1, 4, 65535, 1, 65532, 65535, 1, 65533, 65535, 1, 65534, 65535, 1, 65535, 65535, 1 )
+}
+
+[node name="WallDoor" parent="Walls" index="1"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28, 0, 8 )
+PLAYER_PATH = NodePath("../../../Level/Dinoman")
+
+[node name="foliage" type="Spatial" parent="." index="3"]
+
+[node name="tree" parent="foliage" index="0" instance=ExtResource( 3 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4.23738, 0, 0 )
+
+[node name="tree4" parent="foliage" index="1" instance=ExtResource( 3 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -18.8275, 0, 9.58972 )
+
+[node name="tree6" parent="foliage" index="2" instance=ExtResource( 3 )]
+transform = Transform( 0.299101, 0, -0.400672, 0, 0.5, 0, 0.400672, 0, 0.299101, -5.56959, 0, 0.341998 )
+
+[node name="tree3" parent="foliage" index="3" instance=ExtResource( 3 )]
+transform = Transform( 0.119223, 0, -0.485578, 0, 0.5, 0, 0.485578, 0, 0.119223, 6.46144, 0, 12.2414 )
+
+[node name="grass_plant" parent="foliage" index="4" instance=ExtResource( 4 )]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 2.73817, 9.53674e-07, 0.138963 )
+
+[node name="grass_plant11" parent="foliage" index="5" instance=ExtResource( 4 )]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -20.3267, 9.53674e-07, 9.72868 )
+
+[node name="grass_plant6" parent="foliage" index="6" instance=ExtResource( 4 )]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -4.30152, 9.53674e-07, 9.9812 )
+
+[node name="grass_plant8" parent="foliage" index="7" instance=ExtResource( 4 )]
+transform = Transform( 0.141069, 0, 0.206397, 0, 0.25, 0, -0.206397, 0, 0.141069, -6.19324, 1.90735e-06, 9.87977 )
+
+[node name="grass_plant13" parent="foliage" index="8" instance=ExtResource( 4 )]
+transform = Transform( 0.141069, 0, 0.206397, 0, 0.25, 0, -0.206397, 0, 0.141069, -6.19324, 1.90735e-06, -0.780252 )
+
+[node name="grass_plant2" parent="foliage" index="9" instance=ExtResource( 4 )]
+transform = Transform( 0.21049, 0, -0.134885, 0, 0.25, 0, 0.134885, 0, 0.21049, 4.22252, 9.53674e-07, 1.4085 )
+
+[node name="grass_plant7" parent="foliage" index="10" instance=ExtResource( 4 )]
+transform = Transform( 0.21049, 0, -0.134885, 0, 0.25, 0, 0.134885, 0, 0.21049, -18.8423, 9.53674e-07, 10.9982 )
+
+[node name="grass_plant14" parent="foliage" index="11" instance=ExtResource( 4 )]
+transform = Transform( 0.21049, 0, -0.134885, 0, 0.25, 0, 0.134885, 0, 0.21049, -25.5542, 9.53674e-07, 9.59434 )
+
+[node name="grass_plant15" parent="foliage" index="12" instance=ExtResource( 4 )]
+transform = Transform( 0.226724, 0, 0.105339, 0, 0.25, 0, -0.105339, 0, 0.226724, -24.3246, 2.86102e-06, 11.213 )
+
+[node name="grass_plant16" parent="foliage" index="13" instance=ExtResource( 4 )]
+transform = Transform( 0.24606, 0, 0.0442081, 0, 0.25, 0, -0.0442081, 0, 0.24606, -25.8397, 2.86102e-06, 11.1013 )
+
+[node name="grass_plant12" parent="foliage" index="14" instance=ExtResource( 4 )]
+transform = Transform( 0.244955, 0, -0.0499693, 0, 0.25, 0, 0.0499693, 0, 0.244955, -17.9, 9.53674e-07, 9.64152 )
+
+[node name="grass_plant4" parent="foliage" index="15" instance=ExtResource( 4 )]
+transform = Transform( 0.21049, 0, -0.134885, 0, 0.25, 0, 0.134885, 0, 0.21049, -2.81717, 9.53674e-07, 11.2507 )
+
+[node name="grass_plant3" parent="foliage" index="16" instance=ExtResource( 4 )]
+transform = Transform( 0.185047, 0, 0.168099, 0, 0.25, 0, -0.168099, 0, 0.185047, 2.3568, 9.53674e-07, 2.01409 )
+
+[node name="grass_plant10" parent="foliage" index="17" instance=ExtResource( 4 )]
+transform = Transform( 0.185047, 0, 0.168099, 0, 0.25, 0, -0.168099, 0, 0.185047, -20.7081, 9.53674e-07, 11.6038 )
+
+[node name="grass_plant5" parent="foliage" index="18" instance=ExtResource( 4 )]
+transform = Transform( 0.185047, 0, 0.168099, 0, 0.25, 0, -0.168099, 0, 0.185047, -4.68289, 9.53674e-07, 11.8563 )
+
+[node name="grass_plant9" parent="foliage" index="19" instance=ExtResource( 4 )]
+transform = Transform( 0.185047, 0, 0.168099, 0, 0.25, 0, -0.168099, 0, 0.185047, -7.01714, 1.90735e-06, 11.597 )
+
+[node name="tree2" parent="foliage" index="20" instance=ExtResource( 5 )]
+transform = Transform( 0.484658, 0, 0.122907, 0, 0.5, 0, -0.122907, 0, 0.484658, -5.68123, 0, 11.2047 )
+
+[node name="tree5" parent="foliage" index="21" instance=ExtResource( 5 )]
+transform = Transform( 0.436858, 0, 0.243218, 0, 0.5, 0, -0.243218, 0, 0.436858, -24.4884, 0, 10.0933 )
+
+[node name="Flybot" parent="." index="4" instance=ExtResource( 6 )]
+transform = Transform( 0.658323, 0, 0.752736, 0, 1, 0, -0.752736, 0, 0.658323, 6.74344, 0, 9.43307 )
+MESH_PATH = NodePath("../../Level/Flybot/Flybot/Armature/Skeleton/Flybot")
+HITBOX = NodePath("../../Level/Flybot/Flybot/Hitbox")
+ANIM_PLAYER = NodePath("../../Level/Flybot/Flybot/AnimationPlayer")
+ROTATION_OBJECT = NodePath("../../Level/Flybot")
+
+[node name="Flybot3" parent="." index="5" instance=ExtResource( 6 )]
+transform = Transform( -0.766263, 0, -0.642527, 0, 1, 0, 0.642527, 0, -0.766263, -5.95715, 0, 12.9815 )
+MESH_PATH = NodePath("../../Level/Flybot3/Flybot/Armature/Skeleton/Flybot")
+HITBOX = NodePath("../../Level/Flybot3/Flybot/Hitbox")
+ANIM_PLAYER = NodePath("../../Level/Flybot3/Flybot/AnimationPlayer")
+ROTATION_OBJECT = NodePath("../../Level/Flybot3")
+
+[node name="Flybot2" parent="." index="6" instance=ExtResource( 6 )]
+transform = Transform( -0.928472, 0, 0.371404, 0, 1, 0, -0.371404, 0, -0.928472, -23.3267, -1.90735e-06, 2.84156 )
+MESH_PATH = NodePath("../../Level/Flybot2/Flybot/Armature/Skeleton/Flybot")
+HITBOX = NodePath("../../Level/Flybot2/Flybot/Hitbox")
+ANIM_PLAYER = NodePath("../../Level/Flybot2/Flybot/AnimationPlayer")
+ROTATION_OBJECT = NodePath("../../Level/Flybot2")

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/spooky.wav-88d0bd4c67770b530dd5b888da51b32e.sample"
+
+[deps]
+
+source_file="res://global/assets/bgm/spooky.wav"
+dest_files=[ "res://.import/spooky.wav-88d0bd4c67770b530dd5b888da51b32e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

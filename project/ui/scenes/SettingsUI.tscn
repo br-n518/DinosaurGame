@@ -1,0 +1,66 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://ui/scripts/SettingsUI.gd" type="Script" id=1]
+[ext_resource path="res://ui/assets/quit.png" type="Texture" id=2]
+[ext_resource path="res://ui/assets/save.png" type="Texture" id=3]
+[ext_resource path="res://ui/assets/settings.png" type="Texture" id=4]
+
+[node name="SettingsUI" type="MarginContainer"]
+pause_mode = 2
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -451.0
+margin_bottom = 76.0
+custom_constants/margin_right = 16
+custom_constants/margin_top = 16
+script = ExtResource( 1 )
+
+[node name="HBox" type="HBoxContainer" parent="."]
+margin_top = 16.0
+margin_right = 435.0
+margin_bottom = 86.0
+custom_constants/separation = 16
+alignment = 2
+
+[node name="QuitButton" type="Button" parent="HBox"]
+visible = false
+margin_left = 175.0
+margin_right = 251.0
+margin_bottom = 70.0
+focus_mode = 0
+shortcut_in_tooltip = false
+action_mode = 0
+button_mask = 7
+enabled_focus_mode = 0
+icon = ExtResource( 2 )
+flat = true
+
+[node name="SaveButton" type="Button" parent="HBox"]
+visible = false
+margin_left = 267.0
+margin_right = 343.0
+margin_bottom = 70.0
+focus_mode = 0
+shortcut_in_tooltip = false
+action_mode = 0
+button_mask = 7
+enabled_focus_mode = 0
+icon = ExtResource( 3 )
+flat = true
+
+[node name="SettingsButton" type="Button" parent="HBox"]
+pause_mode = 2
+margin_left = 359.0
+margin_right = 435.0
+margin_bottom = 70.0
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+action_mode = 0
+button_mask = 7
+enabled_focus_mode = 0
+icon = ExtResource( 4 )
+flat = true
+[connection signal="pressed" from="HBox/QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="HBox/SaveButton" to="." method="_on_SaveButton_pressed"]
+[connection signal="toggled" from="HBox/SettingsButton" to="." method="_on_SettingsButton_toggled"]

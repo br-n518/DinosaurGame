@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/alert.wav-95d81ad7d126586a094ab76bd523e2e1.sample"
+
+[deps]
+
+source_file="res://global/assets/sfx/alert.wav"
+dest_files=[ "res://.import/alert.wav-95d81ad7d126586a094ab76bd523e2e1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,10 @@
+bin
+doc
+godot_headers
+godot-cpp
+project/.import
+*.geany
+*.o
+*.so
+*.dll
+*.dylib

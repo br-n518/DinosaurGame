@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ui/assets/button_jump.png" type="Texture" id=1]
+
+[node name="JumpButton" type="TextureRect"]
+margin_left = 1160.0
+margin_top = 576.0
+margin_right = 1352.0
+margin_bottom = 768.0
+texture = ExtResource( 1 )

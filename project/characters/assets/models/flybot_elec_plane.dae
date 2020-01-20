@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+<asset>
+	<contributor>
+		<author>Anonymous</author>
+		<authoring_tool>Collada Exporter for Blender 2.6+, by Juan Linietsky (juan@codenix.com)</authoring_tool>
+	</contributor>
+	<created>2019-09-19T17:37:23Z</created>
+	<modified>2019-09-19T17:37:23Z</modified>
+	<unit meter="1.0" name="meter"/>
+	<up_axis>Z_UP</up_axis>
+</asset>
+<library_geometries>
+	<geometry id="id-mesh-2" name="GEO_elec_plane">
+		<mesh>
+			<source id="id-mesh-2-positions">
+				<float_array id="id-mesh-2-positions-array" count="24"> 2.1540491580963135 -3.285351037979126 1.5682364702224731 -2.1540491580963135 -3.285351037979126 2.4512431621551514 -2.1540491580963135 -3.285351037979126 1.5682364702224731 -2.1540491580963135 -3.285351037979126 2.4512431621551514 2.1540491580963135 -3.285351037979126 1.5682364702224731 -2.1540491580963135 -3.285351037979126 1.5682364702224731 2.1540491580963135 -3.285351037979126 2.4512431621551514 2.1540491580963135 -3.285351037979126 2.4512431621551514</float_array>
+				<technique_common>
+				<accessor source="#id-mesh-2-positions-array" count="8" stride="3">
+					<param name="X" type="float"/>
+					<param name="Y" type="float"/>
+					<param name="Z" type="float"/>
+				</accessor>
+				</technique_common>
+			</source>
+			<source id="id-mesh-2-normals">
+				<float_array id="id-mesh-2-normals-array" count="24"> 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0</float_array>
+				<technique_common>
+				<accessor source="#id-mesh-2-normals-array" count="8" stride="3">
+					<param name="X" type="float"/>
+					<param name="Y" type="float"/>
+					<param name="Z" type="float"/>
+				</accessor>
+				</technique_common>
+			</source>
+			<source id="id-mesh-2-tangents">
+				<float_array id="id-mesh-2-tangents-array" count="24"> 1.0 0.0 7.298643911468616e-10 1.0 0.0 4.941106634959169e-09 1.0 0.0 5.670971248150636e-09 1.0 0.0 1.2055381581888014e-08 1.0 0.0 1.7807335606079278e-09 1.0 0.0 1.3836115364540547e-08 1.0 0.0 0.0 1.0 0.0 0.0</float_array>
+				<technique_common>
+				<accessor source="#id-mesh-2-tangents-array" count="8" stride="3">
+					<param name="X" type="float"/>
+					<param name="Y" type="float"/>
+					<param name="Z" type="float"/>
+				</accessor>
+				</technique_common>
+			</source>
+			<source id="id-mesh-2-bitangents">
+				<float_array id="id-mesh-2-bitangents-array" count="24"> -7.298643911468616e-10 0.0 1.0 -4.941106634959169e-09 0.0 1.0 -5.670971248150636e-09 0.0 1.0 -1.2055381581888014e-08 -0.0 1.0 -1.7807335606079278e-09 -0.0 1.0 -1.3836115364540547e-08 -0.0 1.0 -0.0 0.0 1.0 -0.0 -0.0 1.0</float_array>
+				<technique_common>
+				<accessor source="#id-mesh-2-bitangents-array" count="8" stride="3">
+					<param name="X" type="float"/>
+					<param name="Y" type="float"/>
+					<param name="Z" type="float"/>
+				</accessor>
+				</technique_common>
+			</source>
+			<source id="id-mesh-2-texcoord-0">
+				<float_array id="id-mesh-2-texcoord-0-array" count="16"> 0.9999545812606812 4.5268894609762356e-05 4.53795692010317e-05 0.9999999403953552 4.5268894609762356e-05 4.529656143859029e-05 4.53795692010317e-05 0.9999999403953552 0.9999545812606812 4.5268894609762356e-05 4.5268894609762356e-05 4.529656143859029e-05 0.9999547004699707 0.9999999403953552 0.9999547004699707 0.9999999403953552</float_array>
+				<technique_common>
+				<accessor source="#id-mesh-2-texcoord-0-array" count="8" stride="2">
+					<param name="S" type="float"/>
+					<param name="T" type="float"/>
+				</accessor>
+				</technique_common>
+			</source>
+			<vertices id="id-mesh-2-vertices">
+				<input semantic="POSITION" source="#id-mesh-2-positions"/>
+			</vertices>
+			<triangles count="4">
+				<input semantic="VERTEX" source="#id-mesh-2-vertices" offset="0"/>
+				<input semantic="NORMAL" source="#id-mesh-2-normals" offset="0"/>
+				<input semantic="TEXCOORD" source="#id-mesh-2-texcoord-0" offset="0" set="0"/>
+				<input semantic="TEXTANGENT" source="#id-mesh-2-tangents" offset="0"/>
+				<input semantic="TEXBINORMAL" source="#id-mesh-2-bitangents" offset="0"/>
+				<p> 0 1 2 3 4 5 0 6 1 3 7 4 </p>
+			</triangles>
+		</mesh>
+	</geometry>
+</library_geometries>
+<library_visual_scenes>
+	<visual_scene id="id-scene-1" name="scene">
+		<node id="electric_plane" name="electric_plane" type="NODE">
+			<matrix sid="transform"> 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0  </matrix>
+			<instance_geometry url="#id-mesh-2">
+			</instance_geometry>
+		</node>
+	</visual_scene>
+</library_visual_scenes>
+<scene>
+	<instance_visual_scene url="#id-scene-1" />
+</scene>
+</COLLADA>

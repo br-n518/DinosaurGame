@@ -1,0 +1,36 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path.s3tc="res://.import/dino.png-c17a70b08015d395992d94b2091d7e4f.s3tc.stex"
+path.etc="res://.import/dino.png-c17a70b08015d395992d94b2091d7e4f.etc.stex"
+metadata={
+"imported_formats": [ "s3tc", "etc" ],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://characters/assets/models/dino.png"
+dest_files=[ "res://.import/dino.png-c17a70b08015d395992d94b2091d7e4f.s3tc.stex", "res://.import/dino.png-c17a70b08015d395992d94b2091d7e4f.etc.stex" ]
+
+[params]
+
+compress/mode=2
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=true
+flags/filter=true
+flags/mipmaps=true
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

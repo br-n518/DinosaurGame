@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/fun_ride.ogg-7e85c0a9bb3c42bfd7f1dc68630d248b.oggstr"
+
+[deps]
+
+source_file="res://global/assets/bgm/fun_ride.ogg"
+dest_files=[ "res://.import/fun_ride.ogg-7e85c0a9bb3c42bfd7f1dc68630d248b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

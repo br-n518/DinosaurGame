@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends DirectionalLight
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	if _globals.enable_shadows:
+		self.shadow_enabled = true"
+
+[node name="DirectionalLight" type="DirectionalLight"]
+transform = Transform( 1, 0, 0, 0, 0.173648, 0.984808, 0, -0.984808, 0.173648, 0, 0, 0 )
+light_energy = 0.5
+light_indirect_energy = 0.5
+light_bake_mode = 2
+directional_shadow_mode = 1
+directional_shadow_max_distance = 128.0
+script = SubResource( 1 )
