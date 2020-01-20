@@ -1,5 +1,6 @@
 
 # Dinosaur Game
+![APK](bin/DinosaurGame.apk)
 
 3D adventure game made using Godot 3.1.1 (GLES2; Bullet).  
 Graphics programs used:  Blender 2.79b, GIMP, Krita, Inkscape, LMMS, and sfxr.
@@ -17,9 +18,7 @@ The cobblestone texture for platforms is from opengameart.org
 - You can move the dinosaur and rotate the camera simultaneously.
 - Attack enemies or jump on their heads to defeat them.
 - Defeat all enemies to unlock the door and progress to the next level.
- 
 
-![APK](bin/DinosaurGame.apk)
 
 
 ## Notes
