@@ -19,6 +19,8 @@ The cobblestone texture for platforms is from opengameart.org
 - Defeat all enemies to unlock the door and progress to the next level.
  
 
+![APK](bin/DinosaurGame.apk)
+
 
 ## Notes
 
